@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { Nunito, Geist_Mono } from "next/font/google";
-import { Header } from "@/components/shared/Header";
+import { Header } from "@/components/shared";
 import "./globals.css";
 
 const nunito = Nunito({

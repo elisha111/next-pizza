@@ -3,7 +3,7 @@ import { cn } from "@/lib/utils";
 import Image from "next/image";
 import { Button } from "../ui";
 import { Container } from "../shared";
-import { ShoppingCart, User } from "lucide-react";
+import { ArrowRight, ShoppingCart, User } from "lucide-react";
 
 interface Props {
   className?: string;
@@ -34,15 +34,20 @@ export const Header = (props: Props) => {
           </Button>
 
           <div>
-            <Button>
-              <b>520 $</b>
+            <Button className="group relative">
+              <b>520 ₽</b>
 
               <span className="h-full w-0.25 bg-white/30 mx-1" />
 
-              <div className="flex items-center gap-2">
+              <div className="flex items-center gap-2 transition duration-200 group-hover:opacity-0">
                 <ShoppingCart size={16} />
                 <b>3</b>
               </div>
+              
+              <ArrowRight
+                size={20}
+                className="absolute right-5 transition duration-300 -translate-x-2 opacity-0 group-hover:opacity-100 group-hover:translate-x-0"
+              />
             </Button>
           </div>
         </div>
