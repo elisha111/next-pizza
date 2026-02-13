@@ -6,3 +6,4 @@ export { Input } from "./input";
 export { Popover } from "./popover";
 export { Select } from "./select";
 export { Slider } from "./slider";
+export { Label } from "./label";
