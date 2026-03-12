@@ -1,4 +1,9 @@
-import { FilterCheckbox, RangeSlider, Title } from "@/components/shared";
+import {
+  CheckboxFiltersGroup,
+  FilterCheckbox,
+  RangeSlider,
+  Title,
+} from "@/components/shared";
 import { Input } from "../ui";
 
 interface Props {
@@ -35,6 +40,112 @@ export const Filters = (props: Props) => {
 
         <RangeSlider min={0} max={5000} step={10} value={[0, 5000]} />
       </div>
+
+      <CheckboxFiltersGroup
+        title="Ингредиенты"
+        className="mt-5"
+        limit={6}
+        items={[
+          {
+            text: "Сырный соус",
+            value: "1",
+          },
+          {
+            text: "Моццарелла",
+            value: "2",
+          },
+          {
+            text: "Чеснок",
+            value: "2",
+          },
+          {
+            text: "Солённые огурчики",
+            value: "2",
+          },
+          {
+            text: "Красный лук",
+            value: "2",
+          },
+          {
+            text: "Томаты",
+            value: "2",
+          },
+          {
+            text: "Сырный соус",
+            value: "1",
+          },
+          {
+            text: "Моццарелла",
+            value: "2",
+          },
+          {
+            text: "Чеснок",
+            value: "2",
+          },
+          {
+            text: "Солённые огурчики",
+            value: "2",
+          },
+          {
+            text: "Красный лук",
+            value: "2",
+          },
+          {
+            text: "Томаты",
+            value: "2",
+          },
+        ]}
+        defaultItems={[
+          {
+            text: "Сырный соус",
+            value: "1",
+          },
+          {
+            text: "Моццарелла",
+            value: "2",
+          },
+          {
+            text: "Чеснок",
+            value: "2",
+          },
+          {
+            text: "Солённые огурчики",
+            value: "2",
+          },
+          {
+            text: "Красный лук",
+            value: "2",
+          },
+          {
+            text: "Томаты",
+            value: "2",
+          },
+          {
+            text: "Сырный соус",
+            value: "1",
+          },
+          {
+            text: "Моццарелла",
+            value: "2",
+          },
+          {
+            text: "Чеснок",
+            value: "2",
+          },
+          {
+            text: "Солённые огурчики",
+            value: "2",
+          },
+          {
+            text: "Красный лук",
+            value: "2",
+          },
+          {
+            text: "Томаты",
+            value: "2",
+          },
+        ]}
+      />
     </div>
   );
 };
