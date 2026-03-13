@@ -1,5 +1,5 @@
 import { cn } from "@/lib/utils";
-import { Categories, Container, SortPopup } from "@/components/shared";
+import { Categories, CategoriesTest, Container, SortPopup } from "@/components/shared";
 
 interface Props {
   className?: string;
@@ -17,6 +17,7 @@ export const TopBar = (props: Props) => {
     >
       <Container className="flex items-center justify-between">
         <Categories />
+        {/* <CategoriesTest /> */}
         <SortPopup />
       </Container>
     </div>

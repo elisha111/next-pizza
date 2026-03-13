@@ -1,6 +1,7 @@
 import { cn } from "@/lib/utils";
 import Link from "next/link";
 import { Button } from "../ui";
+import { Tabs, TabsList, TabsTrigger } from "../ui/tabs";
 
 interface Props {
   className?: string;
@@ -42,5 +43,32 @@ export const Categories = (props: Props) => {
         </Button>
       ))}
     </div>
+  );
+};
+
+export const CategoriesTest = (props: Props) => {
+  const { className } = props;
+
+  const cats = [
+    "Пиццы",
+    "Комбо",
+    "Закуски",
+    "Коктейли",
+    "Кофе",
+    "Напитки",
+    "Десерты",
+  ];
+  const activeIndex = 0;
+
+  return (
+    <Tabs defaultValue={cats[0]}>
+      <TabsList>
+        {cats.map((cat, index) => (
+          <TabsTrigger value={cat} key={index}>
+            {cat}
+          </TabsTrigger>
+        ))}
+      </TabsList>
+    </Tabs>
   );
 };
