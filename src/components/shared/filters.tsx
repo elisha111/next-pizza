@@ -4,7 +4,8 @@ import {
   RangeSlider,
   Title,
 } from "@/components/shared";
-import { Input } from "../ui";
+import { Checkbox, Input, Label } from "../ui";
+import { Field, FieldGroup } from "../ui/field";
 
 interface Props {
   className?: string;
@@ -22,6 +23,18 @@ export const Filters = (props: Props) => {
         <FilterCheckbox text="123" value="1" />
         <FilterCheckbox text="Новинки" value="2" />
       </div>
+
+      <FieldGroup className="gap-3">
+        <Field orientation="horizontal" >
+          <Checkbox id="terms-checkbox" name="terms-checkbox" />
+          <Label htmlFor="terms-checkbox">Accept terms and conditions</Label>
+        </Field>
+
+        <Field orientation="horizontal">
+          <Checkbox id="terms-checkbox1" name="terms-checkbox1" />
+          <Label htmlFor="terms-checkbox1">Accept terms and conditions</Label>
+        </Field>
+      </FieldGroup>
 
       {/* фильтр цен */}
       <div className="mt-5 border-y border-y-neutral-100 py-6 pb-7">
