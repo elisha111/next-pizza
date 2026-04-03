@@ -22,71 +22,79 @@ export default function Home() {
             <div className="flex flex-col gap-16">
               <ProductsGroupList
                 title="Пиццы"
+                categoryId={1}
                 products={[
                   {
                     id: 1,
                     name: "Чизбургер-пицца",
-                    imageUrl: "https://media.dodostatic.net/image/r:233x233/0198bf4e67f474f991f04a46a49af5e6.avif",
+                    imageUrl:
+                      "https://media.dodostatic.net/image/r:233x233/0198bf4e67f474f991f04a46a49af5e6.avif",
                     price: 550,
                     items: [{ price: 550 }],
                   },
                   {
                     id: 2,
                     name: "Чизбургер-пицца",
-                    imageUrl: "https://media.dodostatic.net/image/r:233x233/0198bf4e67f474f991f04a46a49af5e6.avif",
+                    imageUrl:
+                      "https://media.dodostatic.net/image/r:233x233/0198bf4e67f474f991f04a46a49af5e6.avif",
                     price: 550,
                     items: [{ price: 550 }],
                   },
                   {
                     id: 3,
                     name: "Чизбургер-пицца",
-                    imageUrl: "https://media.dodostatic.net/image/r:233x233/0198bf4e67f474f991f04a46a49af5e6.avif",
+                    imageUrl:
+                      "https://media.dodostatic.net/image/r:233x233/0198bf4e67f474f991f04a46a49af5e6.avif",
                     price: 550,
                     items: [{ price: 550 }],
                   },
                   {
                     id: 4,
                     name: "Чизбургер-пицца",
-                    imageUrl: "https://media.dodostatic.net/image/r:233x233/0198bf4e67f474f991f04a46a49af5e6.avif",
+                    imageUrl:
+                      "https://media.dodostatic.net/image/r:233x233/0198bf4e67f474f991f04a46a49af5e6.avif",
                     price: 550,
                     items: [{ price: 550 }],
                   },
                 ]}
-                categoryId={1}
               />
               <ProductsGroupList
-                title="Завтрак"
+                title="Комбо"
+                categoryId={2}
                 products={[
                   {
                     id: 1,
                     name: "Чизбургер-пицца",
-                    imageUrl: "https://media.dodostatic.net/image/r:233x233/0198bf4e67f474f991f04a46a49af5e6.avif",
+                    imageUrl:
+                      "https://media.dodostatic.net/image/r:233x233/0198bf4e67f474f991f04a46a49af5e6.avif",
                     price: 550,
                     items: [{ price: 550 }],
                   },
                   {
                     id: 2,
                     name: "Чизбургер-пицца",
-                    imageUrl: "https://media.dodostatic.net/image/r:233x233/0198bf4e67f474f991f04a46a49af5e6.avif",
+                    imageUrl:
+                      "https://media.dodostatic.net/image/r:233x233/0198bf4e67f474f991f04a46a49af5e6.avif",
                     price: 550,
                     items: [{ price: 550 }],
                   },
                   {
                     id: 3,
                     name: "Чизбургер-пицца",
-                    imageUrl: "https://media.dodostatic.net/image/r:233x233/0198bf4e67f474f991f04a46a49af5e6.avif",
+                    imageUrl:
+                      "https://media.dodostatic.net/image/r:233x233/0198bf4e67f474f991f04a46a49af5e6.avif",
                     price: 550,
                     items: [{ price: 550 }],
                   },
                   {
                     id: 4,
                     name: "Чизбургер-пицца",
-                    imageUrl: "https://media.dodostatic.net/image/r:233x233/0198bf4e67f474f991f04a46a49af5e6.avif",
+                    imageUrl:
+                      "https://media.dodostatic.net/image/r:233x233/0198bf4e67f474f991f04a46a49af5e6.avif",
                     price: 550,
                     items: [{ price: 550 }],
                   },
                 ]}
-                categoryId={2}
               />
             </div>
           </div>
