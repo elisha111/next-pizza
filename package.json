@@ -16,10 +16,12 @@
     "schema": "src/prisma/schema.prisma"
   },
   "dependencies": {
+    "@base-ui/react": "^1.6.0",
     "@prisma/adapter-pg": "^7.8.0",
     "@prisma/client": "^7.8.0",
     "@types/bcrypt": "^6.0.0",
     "@types/pg": "^8.20.0",
+    "axios": "^1.18.0",
     "bcrypt": "^6.0.0",
     "class-variance-authority": "^0.7.1",
     "clsx": "^2.1.1",
@@ -29,7 +31,7 @@
     "next": "16.1.6",
     "pg": "^8.22.0",
     "prisma": "^7.8.0",
-    "radix-ui": "^1.4.3",
+    "radix-ui": "^1.6.0",
     "react": "19.2.3",
     "react-dom": "19.2.3",
     "react-use": "^17.6.0",
