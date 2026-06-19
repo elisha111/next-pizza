@@ -31,7 +31,6 @@ model Product {
 model ProductItem {
   id Int @id @default(autoincrement())
 
-  name      String
   price     Int
   size      Int?
   pizzaType Int?
